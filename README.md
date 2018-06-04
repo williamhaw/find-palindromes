@@ -2,14 +2,17 @@
 
 ## Usage
 Build the project by running the following command:
+
 On Linux:
 ```sh
 ./gradlew clean fatJar
 ```
+
 On Windows:
 ```sh
 .\gradlew.bat clean fatJar
 ```
+
 To run search for the three longest unique palindromes from file(only reads the first line):
 ```sh
 java -cp build/libs/find-palindrome-all.jar com.williamhaw.palindrome.Main /path/to/text/file
@@ -18,7 +21,7 @@ java -cp build/libs/find-palindrome-all.jar com.williamhaw.palindrome.Main /path
 ## Assumptions
 1. One character substrings are palindromes.
 2. Empty substrings are palindromes.
-3. Repeated palindromes at different indexs should not be included in output.
+3. Repeated palindromes at different indexes should not be included in output.
 
 ## Approach
 The input string is split in a top-down manner. The palindrome search checks the whole string to see if it is a palindrome,
